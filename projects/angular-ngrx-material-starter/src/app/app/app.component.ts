@@ -29,7 +29,6 @@ import {
 export class AppComponent implements OnInit {
   isProd = env.production;
   envName = env.envName;
-  version = env.versions.app;
   year = new Date().getFullYear();
   logo = require('../../assets/logo.png');
   navigation = [
