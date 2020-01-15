@@ -16,7 +16,9 @@ import {
   selectSettingsLanguage,
   selectEffectiveTheme
 } from '../core/core.module';
-import { actionSettingsChangeAnimationsPageDisabled } from '../core/settings/settings.actions';
+import {
+  actionSettingsChangeAnimationsPageDisabled
+} from '../core/settings/settings.actions';
 
 @Component({
   selector: 'anms-root',
@@ -31,9 +33,7 @@ export class AppComponent implements OnInit {
   year = new Date().getFullYear();
   logo = require('../../assets/logo.png');
   navigation = [
-    { link: 'about', label: 'About' },
-    { link: 'feature-list', label: 'Features' },
-    { link: 'examples', label: 'Examples' }
+    { link: 'characters', label: 'Characters' },
   ];
 
   isAuthenticated$: Observable<boolean>;
