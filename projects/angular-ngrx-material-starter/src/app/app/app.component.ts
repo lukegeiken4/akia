@@ -33,6 +33,9 @@ export class AppComponent implements OnInit {
   logo = require('../../assets/logo.png');
   navigation = [
     { link: 'characters', label: 'Characters' },
+    { link: 'locations', label: 'Locations' },
+    { link: 'episodes', label: 'Episodes' },
+    { link: 'galaxy', label: 'The Galaxy' }
   ];
 
   isAuthenticated$: Observable<boolean>;

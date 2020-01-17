@@ -12,6 +12,21 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/characters/characters.module').then(m => m.CharactersModule)
   },
+  {
+    path: 'episodes',
+    loadChildren: () =>
+      import('./features/episodes/episodes.module').then(m => m.EpisodesModule)
+  },
+  {
+    path: 'locations',
+    loadChildren: () =>
+      import('./features/locations/locations.module').then(m => m.LocationsModule)
+  },
+  {
+    path: 'galaxy',
+    loadChildren: () =>
+      import('./features/galaxy/galaxy.module').then(m => m.GalaxyModule)
+  },
   //   {
   //     path: 'feature-list',
   //     loadChildren: () =>
